@@ -1,0 +1,16 @@
+Protocol: KeySending
+Types:	Agent	A, B;
+	Number	MsgA, MsgB;
+	Symmetric_key	KAB;
+Knowledge:
+	A: A, B;
+	B: A, B;
+Actions:
+A -> B: A, KAB
+B -> A: {| MsgB |}KAB
+A -> B: {| MsgA |}KAB
+
+Goals:
+KAB secret between A, B
+MsgA secret between A, B
+MsgB secret between A, B

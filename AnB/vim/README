@@ -1,0 +1,5 @@
+Installation of the syntax description for vim is very easy (for UNIX-derived systems, such as MacOSX or Linux).
+Ensure that you have a folder called ".vim" (without the double quotes) in your home folder.
+Then simply copy the ftdetect and syntax folders into that folder.
+
+For windows systems, this might be different, if you can tell me how to, please report back via the Issues or something similar ;)

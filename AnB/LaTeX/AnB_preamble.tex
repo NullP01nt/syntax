@@ -1,0 +1,61 @@
+\usepackage{listings}
+\usepackage{xcolor}
+
+\definecolor{keywords1}{rgb}{0.5,0,0.25}
+\definecolor{keywords2}{rgb}{0,0,0.5}
+\definecolor{keywords3}{rgb}{0,0,1.0}
+\definecolor{keywords4}{rgb}{0,0.5,0.5}
+\definecolor{keywords5}{rgb}{0.25,0,0.5}
+\definecolor{linecomments}{rgb}{0,0.5,0}
+
+\lstdefinelanguage{AnB} {
+    sensitive = true,
+    keywords = {
+        Protocol, Knowledge, Actions, Goals, Types
+    },
+    keywords = [2]{
+        Number, Function, Symmetric\_key, Public\_key, Agent,
+    },
+    keywords = [3]{
+        where, authenticates, on, secrecy, of, secret, between
+    },
+    keywords = [4]{
+        A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z
+    },
+    keywords = [5]{
+        a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z
+    },
+    keywordstyle=\color{keywords1},% for example
+    keywordstyle=[2]\color{keywords2},
+    keywordstyle=[3]\color{keywords3},
+    keywordstyle=[4]\color{keywords4},
+    keywordstyle=[5]\color{keywords5},
+    numbers=left,
+    numberstyle=\scriptsize,
+    stepnumber=1,
+    numbersep=8pt,
+    showstringspaces=false,
+    breaklines=false,
+    comment=[l]{\#},
+    commentstyle=\color{linecomments},
+}
+
+\lstset{ %
+  backgroundcolor=\color{white},   % choose the background color;
+  basicstyle=\ttfamily\footnotesize,    % the size of the fonts for the code
+  breakatwhitespace=false,         % if automatic breaks only happen at whitespace
+  breaklines=false,                 % sets automatic line breaking
+  captionpos=b,                    % sets the caption-position to bottom
+  extendedchars=true,              % lets you use non-ASCII characters;
+  frame=single,	                   % adds a frame around the code
+  keepspaces=true,                 % keeps spaces in text
+  keywordstyle=\color{blue},       % keyword style
+  language={AnB},                 % the language of the code
+  numberstyle=\scriptsize\color{gray}, % the style that is used for the line-numbers
+  rulecolor=\color{black},         % if not set, the frame-color may be changed
+  showspaces=false,                % show spaces everywhere adding particular
+  showstringspaces=false,          % underline spaces within strings only
+  showtabs=false,                  % show tabs, adding particular underscores
+  stringstyle=\color{linecomments},     % string literal style
+  tabsize=2,	                   % sets default tabsize to 2 spaces
+}
